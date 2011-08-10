@@ -1,0 +1,5 @@
+* crlf=lf
+* eol=lf
+*.gif binary
+*.png binary
+*.jpg binary

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Some test suite 1</title>
+<script src="http://code.jquery.com/qunit/qunit-git.js"></script>
+<script src="../connector.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-git.css" type="text/css" />
+<script>
+module("Test module 1");
+
+test("Test 1", function() {
+	equals("value1", 'value2');
+});
+
+test("Test 2", function() {
+	equals("value1", 'value2', "Values doesn't match.");
+	ok(false);
+});
+
+test("Test 3", function() {
+	ok(true, "A passing test");
+});
+</script>
+</head>
+<body>
+	<h1 id="qunit-header">Unit test suite 1</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+</body>
+</html>
