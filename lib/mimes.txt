@@ -26,6 +26,7 @@ image/svg+xml					svg svgz
 image/tiff						tiff tif
 text/html						htm html xhtml
 text/rtf						rtf
+text/css						css
 video/mpeg						mpeg mpg mpe
 video/quicktime					qt mov
 video/x-flv						flv

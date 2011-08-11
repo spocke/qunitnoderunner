@@ -1,9 +1,5 @@
 {
 	"browsers": [
-		{"name": "chrome", "path": "C:/Users/spocke/AppData/Local/Google/Chrome/Application/chrome.exe"},
-		{"name": "explorer", "path": "C:/Program Files (x86)/Internet Explorer/iexplore.exe"},
-		{"name": "safari", "path": "C:/Program Files (x86)/Safari/Safari.exe"},
-		{"name": "firefox", "path": "C:/Program Files (x86)/Mozilla Firefox/firefox.exe"},
-		{"name": "opera", "path": "C:/Program Files (x86)/Opera/opera.exe"}
+		{"name": "chrome", "path": "C:/Users/spocke/AppData/Local/Google/Chrome/Application/chrome.exe"}
 	]
 }

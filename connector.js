@@ -6,7 +6,7 @@
 		return;
 	}
 
-	function sendRequest(data, cb) {
+	function sendRequest(data) {
 		var script = document.createElement('script'), query = '?';
 
 		for (var name in data) {
@@ -21,7 +21,6 @@
 			}
 		}
 
-		script.onload = cb;
 		script.src = queryString.reporturl + query;
 
 		document.body.appendChild(script);
@@ -32,7 +31,7 @@
 
 		if (pending.length) {
 			sending = true;
-			sendRequest(pending.shift(), sendDone);
+			sendRequest(pending.shift());
 		}
 	};
 
@@ -47,7 +46,7 @@
 			return;
 		} else {
 			sending = true;
-			sendRequest(data, sendDone);
+			sendRequest(data);
 		}
 	};
 
@@ -96,6 +95,8 @@
 
 	window.QUnitConnector = {
 		response: function(data) {
+			sendDone();
+
 			if (data.url) {
 				window.location = data.url;
 			}
